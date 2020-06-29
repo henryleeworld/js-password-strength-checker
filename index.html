@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="密碼強度檢查器" />
+    <meta property="og:description" content="高強度密碼是您可以記住，但他人幾乎不可能猜到的密碼。較長的密碼強度也較高，建議您設定至少 8 個字元的密碼。" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/password-strength-checker.css">
+    <title>密碼強度檢查器</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="box">
+            <div class="side">
+                <h1>密碼強度檢查器</h1>
+            </div>
+            <div class="pass-wrapper">
+                <svg id="svg" viewBox="0 0 105.83333 105.83334">
+                </svg>
+                <div class="levels-container">
+                    <div data-carac="length" data-level="0" class="level-line">
+                        <div class="line-label">長度</div>
+                        <div class="line-progression"></div>
+                    </div>
+                    <div data-carac="uppercases" data-level="0" class="level-line">
+                        <div class="line-label">大寫</div>
+                        <div class="line-progression"></div>
+                    </div>
+                    <div data-carac="specials" data-level="0" class="level-line">
+                        <div class="line-label">特殊字元</div>
+                        <div class="line-progression"></div>
+                    </div>
+                    <div data-carac="numbers" data-level="0" class="level-line">
+                        <div class="line-label">數字</div>
+                        <div class="line-progression"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div id="input-wrapper">
+                    <input required id="pwd" type="text">
+                    <label>此處輸入...</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" defer></script>
+    <script src="js/password-strength-checker.js" defer></script>
+</body>
+</html>
